@@ -1,0 +1,37 @@
+El Combined Cycle Power Plant (CCPP) Data Set proviene de una planta de energía de ciclo combinado, que es un 
+tipo de planta de energía que usa tanto una turbina de gas como una turbina de vapor para generar electricidad.
+
+Una planta de ciclo combinado funciona de la siguiente manera:
+Turbina de Gas: El gas natural se quema en una cámara de combustión, produciendo gases de escape calientes
+que se utilizan para mover una turbina conectada a un generador eléctrico.
+Turbina de Vapor: Los gases de escape de la turbina de gas se dirigen a una caldera que produce vapor.
+Este vapor mueve otra turbina conectada a otro generador.
+Eficiencia: Este sistema es más eficiente que las plantas que usan solo turbinas de gas o vapor, ya que 
+aprovecha el calor residual para generar más electricidad.
+
+Objetivo del Dataset:
+El objetivo del CCPP dataset es predecir la potencia de salida neta de la planta en función de ciertas condiciones 
+atmosféricas y operativas.
+
+Características del Dataset
+El dataset contiene 9,568 instancias (filas), cada una representando una observación única de las condiciones y la potencia generada. Tiene las siguientes características (columnas):
+
+AT (Temperature) - Temperatura Ambiente:
+Unidad: Grados Celsius (°C)
+La temperatura del aire ambiente. Un factor importante ya que las turbinas de gas funcionan mejor a temperaturas más bajas.
+
+AP (Ambient Pressure) - Presión Atmosférica:
+Unidad: Milibares (mbar)
+La presión atmosférica afecta la densidad del aire, lo que influye en la eficiencia de la combustión en la turbina.
+
+RH (Relative Humidity) - Humedad Relativa:
+Unidad: Porcentaje (%)
+La humedad relativa del aire, que puede influir en la eficiencia de la combustión y en la generación de energía.
+
+V (Exhaust Vacuum) - Presión de Vacío de Escape:
+Unidad: cm Hg (centímetros de mercurio)
+La presión del vacío en la turbina de vapor. Un vacío mayor puede aumentar la eficiencia de la turbina de vapor.
+
+PE (Net Electrical Output) - Salida Eléctrica Neta:
+Unidad: Megavatios (MW)
+La potencia eléctrica neta generada por la planta de energía. Esta es la variable objetivo que queremos predecir.
